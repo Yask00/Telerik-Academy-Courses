@@ -1,0 +1,34 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace _3.ThrowingExceptions
+{
+    class Program
+    {
+        public static double Sqrt(double value)
+        {
+            if (value < 0)
+            {
+                throw new ArgumentOutOfRangeException("Sqrt for negative numbers is undefined!");
+            }
+
+            return Math.Sqrt(value);
+        }
+
+        static void Main()
+        {
+            try
+            {
+                Sqrt(-1);
+            }
+            catch (ArgumentOutOfRangeException ex)
+            {
+                Console.Error.WriteLine("Error: {0}", ex.Message);
+                throw;
+            }
+        }
+    }
+}
