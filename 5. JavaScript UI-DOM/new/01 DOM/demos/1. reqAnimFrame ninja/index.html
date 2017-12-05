@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>title</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<style>		
+		/*	img {border: 5px solid orangered};	*/
+	</style>	
+</head>
+
+<body>
+
+	<img id="ninja-image" />
+
+	<script> 
+		var ninjaImg = document.getElementById('ninja-image');
+			
+			console.log(ninjaImg instanceof HTMLImageElement); //true
+			console.log(ninjaImg instanceof HTMLElement); //true
+
+			ninjaImg.src = 'telerik-ninja.jpg';
+			//ninjaImg.setAttribute = ('src', 'telerik-ninja.jpg'); //NOT WORKING
+
+			ninjaImg.width = 200 + 'px';
+			//ninjaImg.setAttribute('width', '200px');				//WORKS
+
+			//ninjaImg.setAttribute('border', '5px solid red');	//set border
+			ninjaImg.style.border = '10px solid orange';
+			//ninjaImg.style.borderColor = 'red'	
+			ninjaImg.style.borderRadius = '50%';
+
+		var times = 5,
+			update = -1,
+			isNinjaVisible = true;
+
+		function animationFrame () {
+			if (isNinjaVisible) {
+				ninjaImg.width = 0 + 'px';
+			}
+			else{
+				ninjaImg.width = 400 + 'px';
+			}
+
+			isNinjaVisible = !isNinjaVisible;
+
+			ninjaImg.width = (20 - times) * 10;
+			times += update;
+			if(times === 0) {
+				update = 1;
+			}
+			if(times === 20) {
+				update = -1;
+			}
+
+			requestAnimationFrame(animationFrame);
+			//setInterval(animationFrame, 1000); //WORKS
+		}
+
+		animationFrame();
+
+	</script>
+
+
+</body>
+
+</html>

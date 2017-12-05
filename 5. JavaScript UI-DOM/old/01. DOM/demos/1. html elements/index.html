@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+
+		<img id="ninja-image" />
+
+		<script> 
+			var ninjaImg = document.getElementById('ninja-image');
+			ninjaImg.src = 'telerik-ninja.jpg';
+			ninjaImg.width = 400;
+
+			var times = 20;
+			update = -1;
+
+			var isNinjaVisible = true;
+
+			function animationFrame () {
+				if (isNinjaVisible) {
+					ninjaImg.width = 0;
+				}
+				else{
+					ninjaImg.width = 400;
+				}
+
+				isNinjaVisible = !isNinjaVisible;
+
+				ninjaImg.width = (20 - times) * 50;
+				times += update;
+
+				if (times === 0) {
+					update = 0.1;
+				}
+				if(times === 20) {
+							update = -0.1;
+				}
+				
+			requestAnimationFrame(animationFrame);
+}
+			
+			animationFrame();
+
+		</script>
+
+
+</body>
+</html>

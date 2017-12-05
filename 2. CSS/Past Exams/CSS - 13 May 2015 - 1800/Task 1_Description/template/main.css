@@ -1,0 +1,75 @@
+
+body{
+	font-size: 14px;
+	font-family: "Arial";
+	margin:0;
+	padding:0;
+}
+
+#root {
+	background-color:#205D99;
+	width:600px;
+	color:white;
+	border:none;
+}
+
+.avengers {
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	
+}
+
+.avengers li {
+	
+	font-weight:bold;
+	font-size:25px;
+}
+
+.avengers li  {
+	border-bottom: 3px solid #79AEE3;
+}
+
+.preview {
+	display:none;
+	width:600px;
+}
+
+.preview img {
+	width:250px;
+	height:150px;
+	border: 15px solid #79AEE3;
+	border-radius:15px;
+	margin-left:15px;
+	margin-right:10px;
+	float:left;
+}
+
+.preview p {
+	color:#E4E5E1;
+	padding-left:15px;
+	margin-top:0px;
+	font-size:14px;
+	font-weight:500;
+	
+}
+
+#avenger-1, #avenger-2, #avenger-3, #avenger-4, #avenger-5, #avenger-6 
+{
+	display:none;
+}
+
+label {
+	font-weight:normal;
+	color:white;
+	display:block;
+	text-align:center;
+	padding-top:10px;
+	padding-bottom:10px;
+}
+label:hover {color:#AECFE0; font-weight:bold;padding-bottom:25px;}
+
+label:hover + .preview 
+{
+	display:block;
+}

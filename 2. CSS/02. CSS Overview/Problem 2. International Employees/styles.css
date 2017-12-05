@@ -1,0 +1,24 @@
+﻿/* CSS Doucument */
+
+table, tr, td
+		{
+		border: 1px solid gray;	
+		border-collapse:collapse;
+		}
+td 
+		{
+			padding:6px;
+		}
+#header 
+		{
+		background-color:#56B906;	
+		color:#D3FCCC;
+		font-size:18px;
+		}
+
+tr:nth-child(even){
+			background-color: #FFFFFF}
+
+tr:nth-child(odd){
+			background-color: #ECECD8}
+			

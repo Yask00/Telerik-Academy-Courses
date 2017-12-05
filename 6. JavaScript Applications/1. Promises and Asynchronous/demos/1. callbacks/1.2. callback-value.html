@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <button id="drop-bomb">Drop Bomb</button>
+    <div id="bomb" style="font-size: 20em; color: red"></div>
+    <div id="bomb-report" style="font-size: 10em;"></div>
+
+    <script>
+        (function () {
+            function dropBomb(success) { //dropBomb = function dropBomb(success)
+                //after click //success = function (time)
+                setTimeout(function () {
+                    document.getElementById('bomb').innerHTML = 'BOOM';
+
+                    var bombDropDateTime = new Date();
+                    success(bombDropDateTime); //after click //success = function (time)
+                }, 2000);
+            }
+
+            function reportBombDrop(time) {//reportBombDrop = function reportBombDrop(time)
+                document.getElementById('bomb-report').innerHTML = 'Bomb dropped at' +
+                    time.getHours() + ":" + time.getMinutes() + ":" + time.getSeconds();
+            }
+
+            document.getElementById('drop-bomb').onclick = function () {
+                dropBomb(function (time) {//dropBomb = function dropBomb(success)
+                    document.getElementById("bomb-report").
+                        innerHTML = "Bomb dropped at " +
+                        time.getHours() + ":" +
+                        time.getMinutes() + ":" +
+                        time.getSeconds();
+                });
+            }
+        }());
+    </script>
+</body>
+
+</html>

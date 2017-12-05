@@ -1,0 +1,118 @@
+div#info {
+  background-color: #00a8e6;
+  border: thin solid #00709a;
+  width: 300px;
+  padding: 25px;
+  color: #fff;
+  text-shadow: 0.5px 0.5px #000;
+}
+div#success {
+  background-color: #8cc14c;
+  border: thin solid #658f32;
+  width: 300px;
+  padding: 25px;
+  color: #fff;
+  text-shadow: 0.5px 0.5px #000;
+}
+div#warning {
+  background-color: #faa732;
+  border: thin solid #da8205;
+  width: 300px;
+  padding: 25px;
+  color: #fff;
+  text-shadow: 0.5px 0.5px #000;
+}
+div#error {
+  background-color: #da314b;
+  border: thin solid #a11d31;
+  width: 300px;
+  padding: 25px;
+  color: #fff;
+  text-shadow: 0.5px 0.5px #000;
+}
+.row {
+  width: 100%;
+  max-width: 1080px;
+  margin: 10px auto;
+}
+.item {
+  height: 200px;
+  border: 1px solid #222;
+}
+#one .item {
+  width: 25%;
+  float: left;
+  box-sizing: border-box;
+  background: #840;
+}
+#two .item {
+  width: 33.33333333%;
+  float: left;
+  box-sizing: border-box;
+  background: #048;
+}
+#three .item {
+  width: 50%;
+  float: left;
+  box-sizing: border-box;
+  background: #800;
+}
+@media (min-width: 400px) and (max-width: 800px) {
+  #one .item {
+    width: 33.33333333%;
+    float: left;
+    box-sizing: border-box;
+  }
+  #one .item:first-child,
+  #one .item:last-child {
+    width: 66.66666667%;
+    float: left;
+    box-sizing: border-box;
+  }
+  #two .item {
+    width: 50%;
+    float: left;
+    box-sizing: border-box;
+  }
+  #two .item:first-child {
+    width: 100%;
+    float: left;
+    box-sizing: border-box;
+  }
+  #three .item {
+    width: 100%;
+    float: left;
+    box-sizing: border-box;
+  }
+}
+@media (max-width: 400px) {
+  #one .item {
+    width: 100%;
+    float: left;
+    box-sizing: border-box;
+  }
+  #two .item {
+    width: 100%;
+    float: left;
+    box-sizing: border-box;
+  }
+  #three .item {
+    width: 100%;
+    float: left;
+    box-sizing: border-box;
+  }
+}
+.row:before,
+.row:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+.row:after {
+  clear: both;
+}
+.column-float {
+  float: left;
+  box-sizing: border-box;
+}

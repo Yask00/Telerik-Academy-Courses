@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+
+	<style>
+		div{			  
+			display:inline-block;
+			*display:inline;
+			width:75px;
+			height:75px;
+			zoom:1;
+			border:1px solid black;
+			border-radius:5px;
+		}
+	</style>
+
+</head>
+<body>
+
+			<a href="#" onclick="onAddDivButtonClick()">Add div</a>
+			<hr>
+			<div>
+				text
+			</div>
+			<div>
+				text
+			</div>
+			<div>
+				text
+			</div>
+			<div>
+				text
+			</div>
+	
+		<script> 	
+				var divs = document.getElementsByTagName('div'),
+				qdivs = document.querySelectorAll('div'),
+
+				div = document.createElement('div');
+				div.innerHTML = 'new';
+				
+		function onAddDivButtonClick() {
+				document.body.appendChild(div.cloneNode(true));
+				console.log('getElementsByTagName(\"div\") = ' + divs.length);
+				console.log('querySelectorAll(\"div\") = ' + qdivs.length);
+		}				
+		</script>
+
+
+</body>
+</html>

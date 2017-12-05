@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+
+	<style>
+		div{			  
+			display:inline-block;
+			*display:inline;
+			width:75px;
+			height:75px;
+			zoom:1;
+			border:1px solid black;
+			border-radius:5px;
+		}
+	</style>
+
+</head>
+<body>
+
+			<div id="first-div">
+					text
+			</div>
+			<div>
+					text
+			</div>
+			<div>
+					text
+			</div>
+			<div>
+					text
+			</div>
+	
+		<script> 	
+				var divs = document.getElementsByTagName('div'), // 4 div elements
+					index;
+
+				var firstDiv = document.getElementById('first-div'); // first div
+
+				console.log(divs instanceof Array);					//false
+				console.log(divs instanceof HTMLCollection);		//true
+
+				console.log([].slice.call(divs) instanceof Array);  //true
+				console.log(Array.from(divs) instanceof Array);  	//true
+
+				console.log(firstDiv instanceof HTMLDivElement); 	//true
+				
+				
+				for (let index in divs) {
+					console.log('divs['+index+'] = ' + divs[index])
+				}
+		</script>
+
+
+</body>
+</html>

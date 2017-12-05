@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<script
+			  src="https://code.jquery.com/jquery-3.1.0.js"
+			  integrity="sha256-slogkvB1K3VOkzAI8QITxV3VzpOnkeNVsKvtkYLMjfk="
+			  crossorigin="anonymous"></script>	
+</head>
+<body>
+		<header>
+			<h1>The header</h1>
+		</header>
+
+		<section>
+			<div id="content">
+				<strong>Messages:</strong>
+				<ul id="message-list">
+
+				</ul>
+			</div>
+		</section>
+
+		<aside class="widget">
+			<h2>Widget 1</h2>
+				<ul>
+					<li><a href="#">Item 1</a></li>
+					<li><a href="#">Item 2</a></li>
+					<li><a href="#">Item 3</a></li>
+				</ul>
+		</aside>
+
+		<script type="text/javascript">
+			function printContent(text) {
+				$("#message-list").append("<li>Message: <strong>" + text + "</strong></li>");
+			}
+        var $items = $("ul li");
+        printContent($items.length);
+        printContent($(".widget ul li").text());
+   		 </script>
+		
+</body>
+</html>

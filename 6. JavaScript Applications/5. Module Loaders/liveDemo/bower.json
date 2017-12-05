@@ -1,0 +1,13 @@
+{
+  "name": "systemjs-demo",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Yask00 <jasstreb@abv.bg>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "dependencies": {
+    "jquery": "^3.2.1"
+  }
+}

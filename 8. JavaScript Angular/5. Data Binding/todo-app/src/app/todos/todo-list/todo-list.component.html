@@ -1,0 +1,6 @@
+<div *ngFor="let myTodo of todos">
+  <app-todo  [todo]="myTodo">
+
+  </app-todo>
+  <button (click)="deleteTodo(myTodo)">Delete</button>
+</div>

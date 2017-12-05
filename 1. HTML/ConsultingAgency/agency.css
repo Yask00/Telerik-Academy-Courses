@@ -1,0 +1,263 @@
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+@import url('http://fonts.googleapis.com/css?family=Montserrat');
+
+*{
+    word-wrap: break-word;
+}
+body, section, header, footer{
+    margin: 0;
+}
+
+body {
+    font-family: Montserrat, sans-serif;
+    font-size: 14px;
+}
+
+
+.site-header{
+    background-image: url('images/Layer-759_02.jpg');
+    background-size: cover;
+    min-height: 400px;
+}
+
+nav.top-navigation{
+    width: 80%;
+    padding-top: 15px;
+    margin: 0 auto;
+}
+
+nav.top-navigation ul{
+    background-color: rgba(199, 157, 99, .9);
+    text-align: center;
+    padding: 0;
+   
+}
+
+nav.top-navigation ul li {
+    display: inline-block;
+    padding: 10px;
+}
+
+nav.top-navigation ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav.top-navigation ul li a:hover{
+    color: #f5c686;
+}
+
+nav.top-navigation ul li a.selected{
+    color: #f5c686;
+}
+
+section.slider{
+    text-align: center;
+}
+
+section.slider h1{
+    color: white;
+    text-transform: uppercase;
+    text-shadow: 0px 0px 7px black;
+    font-size: 3em;
+    margin-top: 70px;
+    font-weight: bold;
+}
+
+section.slider p {
+    color: white;
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 10px;
+    background: rgba( 150, 150, 150, 0.4);
+    box-shadow: 0px 0px 15px 5px rgba( 150, 150, 150, 0.4);
+    text-shadow: 0px 0px 7px black;
+}
+
+section.slider .slider-button {
+    margin-top: 30px;
+    display: inline-block;
+    color: white;
+    background: #161616;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 1px solid #4f4f4f;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+section.slider .slider-button:hover{
+    background-color: #c79d63;
+    color:black;
+}
+
+section.industries{
+    text-align: center;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.industries article{
+    max-width:350px;
+    margin: 10px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.industries .icon{
+    width: 45px;
+    height: 45px;
+    line-height:45px;
+    font-size: 2em;
+    background: black;
+    color: white;
+    border-radius: 50%;
+    float: left;
+}
+
+.industries article h2 {
+    text-align: left;
+    margin-left: 65px;
+    font-size: 1.2em;
+}
+
+.industries article p {
+    text-align: left;
+    margin-left: 65px;
+}
+
+.mission{
+    text-align: center;
+    text-shadow: 0px 0px 30px black;
+    background: linear-gradient(rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.7)),
+    url('images/steel-bg.jpg') no-repeat center;
+    background-size: cover;
+    padding: 15px 0px;
+}
+
+.mission h1 {
+    color: orangered;
+}
+
+.benefits{
+    background: linear-gradient(rgba(0, 0, 0, 0.6),
+    rgba(0, 0, 0, 0.6)),
+    url('images/background-choose-us.jpg') no-repeat center;
+    background-size: cover;
+    text-align: center;
+    color: white;
+    padding: 15px 0px;
+}
+
+.benefits article a {
+    padding: 10px;
+    color: white;
+    display: block;
+    text-decoration: none;
+}
+
+.benefits article a:hover{
+    background: rgba(255, 255, 255, 0.8);
+    color: black;
+}
+
+.benefits article {
+    display: inline-block;
+    max-width:300px;
+    border: 2px solid orange;
+    margin: 10px;
+
+}
+
+section.testimonials{
+    background: url('images/consulting-woman.jpg');
+    background-size: cover;
+    text-align: right;
+}
+
+article.testemonial{
+    background: rgba(255, 255, 255, 0.5);
+    max-width: 500px;
+    display: inline-block;
+    padding: 10px;
+    margin: 10px;
+}
+
+article.testemonial .author {
+    background: black;
+    color: white;
+    min-height: 200px;
+    padding: 10px;
+}
+
+.partners {
+    text-align: center;   
+}
+
+.partners li {
+    display: inline-block;
+    vertical-align: middle;
+}
+.site-footer{
+    background: black;
+    text-align: center;
+}
+.site-footer section {
+    vertical-align: top;
+    color: white;
+    display: inline-block;
+    width:300px;
+    margin: 10px;
+    text-align: left;
+}
+
+.site-footer .social-links a {
+    text-decoration: none;
+    color: white;
+    background: rgba( 255, 255, 255, 0.5);
+    font-size: 2em;
+    margin: 5px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    padding: 3px;
+}
+
+.site-footer .extra-links .first-column{
+    margin-left: 15px;
+}
+
+.extra-links div{
+    vertical-align: top;
+    display: inline-block;
+    width: calc(50% - 10px);
+
+}
+
+.extra-links a{
+    color: white;
+    text-decoration: none;
+    display: block;
+    margin: 5px;
+   
+}
+
+.extra-links a:hover{
+    color: blanchedalmond;
+}
+
+.site-footer .consulting p {
+    margin-left: 30px;
+}
+
+.site-footer .instagram-widget li{
+    display: inline-block;
+}
+.site-footer .instagram-widget li img{
+        width: 70px;
+        height: 70px;
+}

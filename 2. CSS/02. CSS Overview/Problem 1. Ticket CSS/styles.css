@@ -1,0 +1,42 @@
+﻿/* CSS Doucument */
+
+.main	{
+		background-color: #595959;
+		width: 400px;
+		}	
+		
+#ticket {
+		color:#BBBBBB;
+		font-size: 20px;
+		}		
+		
+.first-col 
+		{
+	    color:#FBFAF4;
+		font-style:italic;
+		}	
+
+.name-email-link 
+		{
+		color:#FFF2B3	
+		}
+#green-circle
+		{
+		color:green;
+		font-size:20px;		
+		}		
+#support
+		{
+		vertical-align:top;
+		color:red;
+		font-weight:bold;	
+		}		
+.response-action 
+		{
+		color:#BBBBBB;
+		}
+#status
+		{
+		color:#E26B31;
+		font-weight:bold;	
+		}

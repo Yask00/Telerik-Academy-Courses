@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>demo</title>
+    <style>
+        #list {
+            background-color: #ccc;
+        } 
+        #list li {
+            border: 1px solid #555;
+            border-radius: 5px;
+            margin: 20px 10px;
+            display: block;
+            width: 60px;
+        }
+    </style>
+    <script>
+        window.onload = function () {
+            var wrapper = document.getElementById('wrapper'),
+                btn = document.getElementById('btn'),
+                input = document.getElementById('input'),
+                ul = document.getElementById('list');
+
+        window.addEventListener('keydown', doSomething. false);
+
+        function doSomething (ev) {
+            console.log(ev.key);
+            document.getElementById('text').innerText = ev.key;  
+        } 
+
+        btn.addEventListener('click', function () {
+            for (var i = 0; i < 10; i+=1) {
+                ul.innerHTML += '<li id="item' + (i + 1) + '">item ' + (i + 1) + '</li>';
+            }
+        }, false);
+
+        ul.addEventListener('click', function (ev) {
+            if (ev.target.tagName === 'LI') {
+                console.log(ev.target.innerText);
+            }
+
+            return false;
+        }, false);
+
+    }   
+    </script>
+</head>
+<body>
+    <div id="wrapper">
+        <button id="btn">Fill list</button>
+
+        <input type="text" id="input" />
+        <p id="text"></p>
+
+        <ul id="list">
+
+        </ul>
+
+    </div>
+</body>
+</html>

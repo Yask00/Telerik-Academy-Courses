@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Registration form</title>
+	
+	<style type="text/css"> 
+	
+	table, tr, td {border:1px solid gray;
+	border-collapse:collapse;}
+	
+	span {font-weight:bold;
+	float: right;
+	font-size:19px;}
+	
+	</style>
+	
+</head>
+
+
+
+<body>
+	
+	<table>
+		<tr>
+			<td><span> Last Name: </span></td>
+			<td colspan="3"> <form><input type="text" name="lastname" value="Nakov" /></form></td>
+		</tr>
+		<tr>
+			<td><span> First Name: </span></td>
+			<td colspan="3"> <form><input type="text" name="firstname" value="Svetlin" /></form></td>
+		</tr>
+		<tr>
+			<td> <span> Address </span></td>
+			<td colspan="3">
+			<form><textarea cols="20" rows="3" name="address">17 Hristo Botev Str. floor 3, apt. 12</textarea></form>
+			</td>
+		</tr>
+		<tr>
+			<td><span> City </span></td>
+			<td><form><input type="text" name="city" value="Kaspichan" /></form></td>
+			
+			<td><span> State </span></td>
+			<td><form><input type="text" size="6" name="state" /></form></td>
+		</tr>
+		<tr>
+			<td><span> Zip/Postal Code </span></td>
+			<td colspan="3"><form><input type="text" size="4" name="zip" value="9325" /></form></td>
+		</tr>
+		<tr>
+			<td> <span> Country </span></td>
+			<td colspan="3">
+			<form>
+			<select name="country">
+			<option value="1">Bulgaria</option>
+			<option value="2">Other</option>
+			<option value="3">Other other</option>
+			</select>
+			</form>
+			</td>
+		</tr>
+		<tr>
+			<td><span> Phone (country code,<br /> area code, number) </span></td>
+			<td colspan="3">
+			<form>
+			<p>(+<input type="text" name="countrycode" size="3" maxlength="3" value="359" />
+            )<input type="text" name="areacode" size="2" maxlength="2" value="88" />
+			-<input type="text" name="number" size="7" value="8334343" />
+			</p>
+			</form>
+			</td>
+		</tr>
+		<tr>
+			<td><span> E-Mail </span></td>
+			<td colspan="3"> <form><input type="text" name="email" value="nakov@kaspichan.org" /></form></td>
+		</tr>
+		<tr>
+			<td><span> Birth date </span></td>
+			<td colspan="3">
+			<form>
+			Month<input type="text" name="month" size="2" value="06" />
+			Day<input type="text" name="day" size="2" value="14" />
+			Yaer (4 digit)<input type="text" name="year" size="4" maxlength="4" value="1980" />
+			
+			</form>
+			</td>
+		</tr>
+		<tr>
+			<td><span> Gender </span></td>
+			<td colspan="3">
+			<form>
+			<select>
+				<option value="1">Male</option>
+				<option value="2">Female</option>
+			</select>
+			</form>
+			</td>
+		</tr>
+		<tr>
+			<td> <span> Starting date </span></td>
+			<td colspan="3">
+			<form>
+			<input type="radio" name="spring" /> Spring 2006
+			<input type="radio" name="summer" /> Summer 2006
+			</form>
+			</td>
+		</tr>
+		<tr>
+			<td> <span> Comments/Questions </span></td>
+			<td colspan="3">
+			<form>
+			<textarea cols="28" rows="5" name="comments">
+			Please send me mor information about the lodging.
+			</textarea>
+			</form>
+			</td>
+		</tr>
+		<tr>
+			<td  colspan="4" style="background-color:#D1EDE1; padding-top:5px; padding-bottom:5px; text-align:center; " >
+			<form>
+			<input type="submit" value="Submit" />
+			<input type="reset" value="Clear This Form" />
+			</form>
+			</td>
+		</tr>
+	</table>
+	
+	
+</body>
+</html>

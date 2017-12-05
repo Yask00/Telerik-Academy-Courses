@@ -1,0 +1,34 @@
+/* CSS Documentation  */
+
+body {
+	color:#0094ff;
+	width:80%;
+	float:left;
+	font-size:22px;
+	}
+	
+@font-face {
+    font-family: Consolas;
+    src: url(Consolas.ttf);
+}
+
+@font-face {
+    font-family: "Edwardian Script ITC";
+    src: url(EdwardianScriptITC.ttf);
+}	
+	
+#first-line{
+	font-weight: 600;
+	margin-top:10px;
+	margin-bottom:5px;
+	font-family: Consolas;
+}
+
+#first-line:first-letter{
+	font-family: Edwardian Script ITC;
+	font-size: 45px;
+	}
+
+#huge-text{
+	font-family: Consolas;
+}

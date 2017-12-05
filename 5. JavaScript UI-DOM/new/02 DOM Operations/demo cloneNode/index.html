@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>demo</title>
+</head>
+<body>
+    <div id="wrapper">
+        <ul>
+
+        </ul>
+    </div>
+
+    <script>
+        var wrapper = document.getElementById('wrapper'),
+        list = wrapper.children[0];       
+        //childNodes[0]; #text NOT WORKING AS UL
+        //firstElementChild WORKING AS UL
+        
+        var frag = document.createDocumentFragment();
+
+        var li = document.createElement('li');
+        li.style.color = 'red';
+
+        for (var i = 0; i < 10; i+=1) {
+            li.id = 'item' + (i + 1);
+            li.innerText = 'item ' + (i + 1);
+            li.style.listStyleType = 'none';
+
+            //frag.appendChild(li); --> only last index
+            frag.appendChild(li.cloneNode(true));
+        }
+        console.log(frag);  //#document-fragment
+        list.appendChild(frag);
+        
+    </script>
+</body>
+</html>

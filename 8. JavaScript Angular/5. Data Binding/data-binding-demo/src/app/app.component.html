@@ -1,0 +1,35 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<button class="btn btn-primary">{{1 + getNumber()}}</button>
+
+<hr>
+<!-- property Binding -->
+<img *ngFor="let img of images" width="50px" [src]="img.imgURL" />
+
+<!-- attribute Binding -->
+<hr>
+<table border=1>
+  <tr>
+    <td [attr.colspan] = "2"> One-Two</td>
+    <td>Three</td>
+  </tr>
+  <tr>
+    <td>One</td>
+    <td>Two</td>
+    <td>Tjree</td>
+  </tr>
+</table>
+
+<!-- Class Binding / Better with ngClass ngStyle -->
+<hr>
+<p [ngClass]="['myClass', getClass()]">Styled with classes</p>
+
+<!-- event handler -->
+<hr>
+<button (click)="changeName(f.value)">Change Name</button>
+<input #f (blur) = "$event.target.value=''">
+
+<!-- 2 way Data Binding -->
+<hr>
+<img [src]="url" width="100px"/>
+
+<input [(ngModel)]="url">

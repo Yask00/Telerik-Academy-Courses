@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<script
+			  src="https://code.jquery.com/jquery-3.1.0.js"
+			  integrity="sha256-slogkvB1K3VOkzAI8QITxV3VzpOnkeNVsKvtkYLMjfk="
+			  crossorigin="anonymous"></script>	
+</head>
+<body>
+		<div id="holder">
+
+		</div>
+
+
+
+		<script type="text/javascript">
+			
+			var $holder,
+				$list,
+				i,
+				count = 15;
+
+				$holder = $("#holder");
+				$holder.append("<h1>Header</h1>");
+
+				$list = $("<ul/>");
+				$list.css ('list-style-type','none');
+
+				for ( i = 0; i < count; i+=1) {
+						$('<li>' + i + '</li>').appendTo($list);
+				}
+
+				$holder.prepend($list);
+
+   		</script>
+		
+</body>
+</html>

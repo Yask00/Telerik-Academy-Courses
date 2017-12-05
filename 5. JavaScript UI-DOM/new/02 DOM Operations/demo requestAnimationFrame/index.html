@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        div {
+            width: 10px;
+            height: 10px;
+            background: orange;
+            float: left;
+        }
+
+        button {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+        }
+
+        #stop {
+            left: 100px;
+        }
+
+    </style>
+</head>
+<body>
+
+        <button id="start">start</button>
+        <button id="stop">stop</button>
+
+        <script>
+            var globalID;
+
+            function repeatOften() {
+                let newDiv = document.createElement('div');
+                document.body.appendChild(newDiv);
+                //$("<div />").appendTo("body");
+                globalID = requestAnimationFrame(repeatOften);
+            }
+
+            globalID = requestAnimationFrame(repeatOften);
+
+            let stopBtn = document.getElementById('stop');
+            stopBtn.addEventListener('click',function() {
+                cancelAnimationFrame(globalID);
+            });
+
+            let startBtn = document.getElementById('start');
+            startBtn.addEventListener('click',function() {
+                requestAnimationFrame(repeatOften);
+            });
+
+            //$("#stop").on("click", function() {
+            //    cancelAnimationFrame(globalID);
+            //});
+        </script>
+</body>
+</html>
+
+

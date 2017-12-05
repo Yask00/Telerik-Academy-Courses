@@ -1,0 +1,77 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Tables</title>
+  <style type="text/css">
+    table {
+      border-collapse: collapse;
+    }
+    table, th, td {
+      border: 1px solid black;
+    }
+    th, td {
+      padding: 10px;
+    }
+    
+  </style>
+</head>
+<body>
+
+  <div id="wrapper"></div>
+
+        <script id="table-template" type="text/x-handlebars-template">
+            <table class="items-table">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  {{#each headers}} 
+                    <th>{{this}}</th> 
+                  {{/each}}
+                </tr>
+              </thead>
+              
+              <tbody>          
+                {{#each items}}
+                <tr>
+                    <td>{{@index}}</td>
+                    <td>{{this.col1}} </td> 
+                    <td>{{this.col2}} </td>
+                    <td>{{this.col3}} </td>
+                </tr>
+                {{/each}}
+              </tbody>
+            </table>
+        </script>
+
+        <script src="handlebars.min.js"></script>
+
+
+        <script>
+          var skelet = document.getElementById('table-template').innerHTML;
+          var tableTemplate = Handlebars.compile(skelet);
+
+          //having
+         data = {        
+            headers : ['Vendor', 'Model', 'OS'],          
+            items : [{          
+              col1: 'Nokia',            
+              col2: 'Lumia 920',            
+              col3: 'Windows Phone'                      
+            }, {          
+              col1: 'LG',            
+              col2: 'Nexus 5',            
+              col3: 'Android'                      
+            }, {          
+              col1: 'Apple',            
+              col2: 'iPhone 6',                        
+              col3: 'iOS'                      
+            }]          
+          };
+          //End having 
+          var tableResult = tableTemplate(data);
+          document.getElementById('wrapper').innerHTML = tableResult;
+        </script>
+
+
+</body>
+</html>

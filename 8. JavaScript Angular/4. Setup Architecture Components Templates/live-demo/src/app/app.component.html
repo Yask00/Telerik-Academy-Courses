@@ -1,0 +1,13 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<h1>
+  Welcome to {{title}}!
+</h1>
+
+<div *ngIf='isHidden'> <!-- directive -->
+  <ul>
+    <li *ngFor='let person of persons'> <!-- directive -->
+      {{person.firstName}}
+    </li>
+  </ul>
+</div>
+

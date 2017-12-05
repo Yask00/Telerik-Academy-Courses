@@ -1,0 +1,131 @@
+html, body {
+    font-family: 'Segoe UI', 'Segoe UI Web', 'Segoe UI Symbol', 'Helvetica Neue', 'BBAlpha Sans', 'S60 Sans', Arial, sans-serif;
+    background-color: #FFFFFF;
+    padding: 0;
+    margin: 0 auto;
+    width: 1000px;
+    font-weight: 400;
+    -webkit-text-stroke-width: 0;
+    -webkit-font-smoothing: subpixel-antialiased;
+}
+
+/* dadeni dotuk  */
+
+/*header */
+
+#header {
+	font-size:22px;
+	width:980px;
+	margin:auto;
+}
+
+#shellHeader {
+	line-height:65px;
+}
+
+
+#logo {
+	background-image: url('images/logo.png');
+	background-repeat:no-repeat;
+	height:65px;
+	width:175px;
+	float:left;
+	
+}
+
+.separator{
+	display:inline-block;
+	width:25px;
+	margin-left:5px;
+	float:left;
+	font-weight:bold;
+	font-size:40px;
+}
+
+#headerTitle{
+	width:25px;
+	display:inline-block;
+	float:left;
+	margin-left:5px;
+	font-weight:bold;
+}
+
+#search {
+	width:980px;
+	clear:left;
+	display:inline-block;
+	background-color:#0078D7;
+}
+
+.searchInput{
+	width:350px;
+	padding: 5px;
+	margin:15px 315px 15px 315px;
+	
+}
+
+/* END HEADER */
+
+#main {
+	width:960px;
+	margin:auto;
+}
+
+#main h1 {
+	font-size:30px;
+}
+
+#main h2 {
+	font-weight:normal;
+	font-size:24px;
+}
+
+#main p {
+	font-size:16px;
+}
+
+#main hr{
+	height: 5px;
+background-color: #333333;
+}
+
+#footer{
+	font-size:14px;
+	height:55px;
+	width:980px;
+	margin:auto;
+	background-color:#505050;
+	color:#CCCCCC;
+}
+
+#language{
+	margin-left: 20px;
+	display:inline-block;
+	margin-top: 15px;
+}
+
+#copyright {
+	display:inline-block;
+	float:right;
+	margin-right: 20px;
+	margin-top: 15px;
+}
+
+#footerMenu  {
+	list-style-type:none;
+	float:right;
+	margin-right: 20px;
+	margin-top: 15px;
+}
+
+#footerMenu li {
+	
+	float:right;
+}
+
+#footerMenu a {
+	float:right;
+	
+	color:#CCCCCC;
+	text-decoration:none;
+}

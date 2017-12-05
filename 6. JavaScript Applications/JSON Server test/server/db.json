@@ -1,0 +1,40 @@
+{
+  "people": [
+    {
+      "name": "Gosho",
+      "age": 22,
+      "gender": "male",
+      "id": 1
+    },
+    {
+      "name": "Pesho",
+      "age": 23,
+      "gender": "male",
+      "id": 2
+    },
+    {
+      "name": "Ivan",
+      "age": 24,
+      "gender": "male",
+      "id": 3
+    },
+    {
+      "name": "Maryia",
+      "age": 25,
+      "gender": "female",
+      "id": 4
+    },
+    {
+      "name": "Gosho",
+      "age": 22,
+      "gender": "male",
+      "id": 5
+    },
+    {
+      "name": "John",
+      "age": "42",
+      "gender": "male",
+      "id": "6"
+    }
+  ]
+}

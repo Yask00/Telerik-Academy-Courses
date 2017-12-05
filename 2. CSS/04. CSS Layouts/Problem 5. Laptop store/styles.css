@@ -1,0 +1,89 @@
+/* CSS Documentation  */
+
+
+body, header, section, footer, article, h1, h2, h3, h4, h5, h6, input, button, label, p, fieldset, nav, ul, li, a, span, strong, em {
+	margin:0;
+	padding:0;
+}
+
+body {
+	color:black;
+	font-family:verdana;
+	font-size: 15px;
+}
+
+#wrapper {
+	width:900px; 
+	border: 2px solid black;
+	border-radius: 3px;
+	margin-left:5px;
+	margin-top:5px;
+	float:left;
+}
+
+a {	
+	font-size:20px;
+	font-weight: bold;
+	color:#1AB8F2;}
+	
+ul li{
+	list-style-type:none;
+	display:inline;
+}
+
+header nav {text-align:center;
+		margin: 5px auto;}
+		
+hr {width:95%}
+
+section{
+	
+	width:600px;
+	border: 2px solid black;
+	margin-left:8px;
+	margin-bottom:8px;
+	float:left;
+}
+
+fieldset {
+	width:285px;
+	border:2px solid black;
+	margin-left:6px;
+	margin-bottom:3px;
+	display:inline;
+}
+
+legend{
+	font-weight:bold;
+}
+
+.table-cell-left{
+	float:left;
+	clear:left;
+}
+
+span{
+	padding-left:25px;
+	font-weight: 700;
+}
+
+ol li {
+	font-weight: 700;
+	margin-top: 19px;
+	list-style-type:none;
+	/* float:right; */
+	margin-right:5px;
+}
+
+aside {
+	width:288px;
+	display:inline-block;
+	border:none;
+	float:left;
+	margin-top:60px;
+	text-align:center;
+}
+
+aside p{
+	margin-top:20px;
+}

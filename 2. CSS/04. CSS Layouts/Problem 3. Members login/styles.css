@@ -1,0 +1,63 @@
+/* CSS Documentation  */
+/* GLOBALS */ 
+
+body, header, section, footer, article, h1, h2, h3, h4, h5, h6, input, button, label, p, fieldset, nav, ul, li, a, span, strong, em {
+	margin:0;
+	padding:0;
+}
+
+body {
+	color:white;
+	font-family:verdana;
+	font-size:15px;
+}
+
+#wrapper{
+	margin-left:20px;
+	margin-top:20px;
+	width:750px;
+	border-radius:5px;
+	background-color:#3B3B3B;
+}
+
+
+header{border-radius:5px;
+		height:50px;
+	
+			background: rgba(100,100,100,1);
+			background: -moz-linear-gradient(top, rgba(100,100,100,1) 0%, rgba(38,38,38,1) 100%);
+			background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(100,100,100,1)), color-stop(100%, rgba(38,38,38,1)));
+			background: -webkit-linear-gradient(top, rgba(100,100,100,1) 0%, rgba(38,38,38,1) 100%);
+			background: -o-linear-gradient(top, rgba(100,100,100,1) 0%, rgba(38,38,38,1) 100%);
+			background: -ms-linear-gradient(top, rgba(100,100,100,1) 0%, rgba(38,38,38,1) 100%);
+			background: linear-gradient(to bottom, rgba(100,100,100,1) 0%, rgba(38,38,38,1) 100%);
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#646464', endColorstr='#262626', GradientType=0 );
+}
+
+header img {
+	margin-left: 10px;
+	vertical-align:middle;
+}
+
+
+h2{ font-weight:normal;
+	margin-left:10px;
+	color:#FDD416;
+	margin-top:20px;
+	margin-bottom: 20px;
+}
+
+p{  width:80%;
+	color:#7D7D7D;
+	margin-left:10px;
+}
+
+.header{
+	margin-left:15px;
+	display:inline;
+	font-weight:bold;
+}
+
+input{
+	margin-left: 15px;
+}

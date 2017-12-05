@@ -1,0 +1,118 @@
+// variables
+@background-color: #f4f4f4;
+@font-family: Tahoma;
+@primary-color: #3b5998;
+@secondary-color: #20B2AA;
+@line-height: 1em + 1em;
+
+body {
+    font-family: @font-family;
+    background: @background-color;
+    line-height: @line-height;
+}
+
+h1, h3 {
+    .bordered();
+}
+
+// MIXIN class
+.bordered() {
+    border-top: dotted 1px black;
+    border-bottom: #000000 solid 2px;
+}
+
+.primary-text {
+    color: @primary-color;
+}
+
+.btn {
+    padding: 10px 15px;
+    border: 0;
+    .border-radius(10px);
+}
+
+// extending class .btn
+.primary-btn:extend(.btn) {
+    background: @primary-color;
+    .text-color(@primary-color);
+}
+
+// parametric MIXIN
+.border-radius(@radius) {
+    border-radius: @radius;
+}
+
+// pseudo-selectors and nesting
+ul#menu {
+    list-style-type: none;
+    background-color: darken(@secondary-color, 50%);
+    li {
+        padding: 10px 0;
+        a {
+            color: @secondary-color;
+            text-decoration: none;
+            &:hover{
+                color: #000000;
+            }
+        }
+    }
+}
+
+// text color mixins
+.text-color(@a) when (lightness(@a) >= 50%) {
+    color: black;
+}
+
+.text-color(@a) when (lightness(@a) <= 50%) {
+    color: white;
+}
+
+// ----------------------------------NON TUTORIAL STUFF-------------------------------------
+
+// Variables
+@my-selector: banner;
+
+// Usage
+.@{my-selector} { // .banner
+  font-weight: bold;
+  line-height: 40px;
+  margin: 0 auto;
+}
+
+// Variables
+@themes: "../../src/themes";
+
+// Usage
+// @import "@{themes}/tidal-wave.less";
+
+// mixnins as functions
+
+.mixin() {
+    @width:  100%;
+    @height: 200px;
+  }
+  
+.caller {
+  .mixin();
+  width:  @width;
+  height: @height;
+}
+
+// LOOP
+
+.loop(@counter) when (@counter > 0) {
+  .loop((@counter - 1));    // next iteration
+  width: (10px * @counter); // code for each iteration
+}
+
+div {
+  .loop(5); // launch the loop
+}
+
+// div {
+//   width: 10px;
+//   width: 20px;
+//   width: 30px;
+//   width: 40px;
+//   width: 50px;
+// }

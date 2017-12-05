@@ -1,0 +1,63 @@
+/* CSS Documentation  */
+
+body, header, section, footer, article, h1, h2, h3, h4, h5, h6, input, button, label, p, fieldset, nav, ul, li, a, span, strong, em {
+	margin:0;
+	padding:0;
+}
+
+body {
+	color:black;
+	font-family:verdana;
+	font-size:15px;
+}
+
+#wrapper{
+	border-left:3px solid gray;
+	width:150px;
+	margin-left:5px;
+	
+}
+
+ul li {
+	text-decoration:none;
+	padding-left:5px;
+	padding-bottom:5px;
+	list-style-type:none;
+}
+
+
+.main-menu  {
+	font-weight:bold;
+	color:black;
+}
+.main-menu:hover {
+	text-decoration:underline;
+}
+
+.sublist {
+	display:none;
+	list-style-type:none;
+	text-decoration:none;
+	color:#888888;
+}
+
+ul li:hover  .sublist{
+	display:table;
+	padding-left:15px;
+	text-decoration:none;
+	padding-top:4px;
+	font-weight:bold;
+}
+
+
+
+/*.clear{
+	*zoom:1;
+}
+
+.clear:after{
+	content:"";
+	display:block;
+	clear:both; 
+	height:0;
+}*/

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>title</title>
+	
+	<style>		
+		/*	img {border: 5px solid orangered};	*/
+	</style>	
+</head>
+
+<body>
+
+	<div id="1">	
+		first
+	</div>
+	<br>
+	<div id="2" style="color: red; font-size:20px;">
+		second
+	</div>
+	<br>
+	<br>
+	<a href="#" id="link">LINK</a>
+	<br>
+	<br>
+	<img src="#" alt="">
+
+	<script> 
+		let first = document.getElementById('1');
+		let second = document.getElementById('2');
+		let link = document.getElementById('link');
+		let ninja = document.getElementsByTagName('img')[0]; //without [0] was not working!!!! //COLLECTION
+
+
+		first.style.backgroundColor = 'red';		//STYLES
+		first.style.fontSize = '30px';				//STYLES
+
+		second.style.backgroundColor = 'orange';	//STYLES
+		second.style.display = 'inline-block';		//STYLES
+		second.style.float = 'right'; 		
+		
+		link.href = 'http://google.com';			//ATTRIBUTE
+		link.target = '_blank';						//ATTRIBUTE
+
+		link.style.fontSize = '30px';				//STYLES
+		link.style.color = '#ff5032';				//STYLES
+		link.style.textDecoration = 'none';			//STYLES
+		link.setAttribute('class', 'newClass');		//ATTRIBUTE
+
+		ninja.src = './1. reqAnimFrame ninja/telerik-ninja.jpg';			//ATTRIBUTE
+		ninja.alt = 'new ALT text for image';		//ATTRIBUTE
+		ninja.style.width = '200px';				//STYLES
+		ninja.style.border = '2px solid black';		//STYLES
+		ninja.id = 'newId';							//ATTRIBUTE
+
+	</script>
+
+
+</body>
+
+</html>

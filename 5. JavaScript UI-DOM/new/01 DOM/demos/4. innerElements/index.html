@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+
+	<header>
+		<nav id="main-nav">
+			<ul>
+				<li>
+					<a href="#">Home</a>
+				</li>
+				<li>
+					<a href="#">Profile</a>
+				</li>
+				<li>
+					<a href="#">Friends</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+
+	<script>			
+		var mainNav = document.querySelector('#main-nav'),
+			navItems = mainNav.querySelectorAll('ul > li > a'),
+			i;
+			
+		for (var i = 0; i < navItems.length; i++) {
+			console.log(navItems[i].innerHTML)
+		}
+	</script>
+
+</body>
+</html>
