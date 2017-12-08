@@ -44,7 +44,7 @@ console.log = (function () {
 // console.log(console.log.getReturnValues());
 
 
-// our spy function changees thee sum()
+// our spy function changees the sum()
 const spySum = (function () {
     const params = []; 
     const returnValues = [];
